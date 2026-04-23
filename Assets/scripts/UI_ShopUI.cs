@@ -30,7 +30,7 @@ public class UI_ShopUI : MonoBehaviour
         Cursor.lockState = CursorLockMode.None;
         Time.timeScale = 0f;
 
-        Debug.Log("🛒 SHOP AÇILDI");
+        
     }
 
     public void CloseShop()
@@ -44,7 +44,7 @@ public class UI_ShopUI : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Time.timeScale = 1f;
 
-        Debug.Log("❌ SHOP KAPANDI");
+        
     }
 
     public bool IsOpen()

@@ -45,21 +45,21 @@ namespace MysteryStudio.EasyCollider
                 AddColliderToObject(gameObject);
             }
 
-            Debug.Log("Colliders added successfully!");
+            
         }
 
         [ContextMenu("Remove Colliders for This Object")]
         public void RemoveCollidersForThisObject()
         {
             int collidersRemoved = RemoveCollidersFromObject(gameObject);
-            Debug.Log($"Removed {collidersRemoved} colliders from this object.");
+            
         }
 
         [ContextMenu("Remove Colliders for All Objects")]
         public void RemoveCollidersForAllObjects()
         {
             int totalCollidersRemoved = RemoveCollidersFromObjectAndChildren(gameObject);
-            Debug.Log($"Removed {totalCollidersRemoved} colliders from this object and its children.");
+            
         }
 
         private int RemoveCollidersFromObject(GameObject obj)

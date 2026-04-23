@@ -125,37 +125,7 @@ public class EnemyController : MonoBehaviour
     }
 
     // ================= PLAYER VISION =================
-    //void PlayerDetection()
-    //{
-    //    Collider[] hits = Physics.OverlapSphere(transform.position, viewDistance, playerMask);
-
-    //    foreach (var hit in hits)
-    //    {
-    //        if (!hit.CompareTag("Player")) continue;
-
-    //        Vector3 dirToPlayer = (hit.transform.position - transform.position).normalized;
-    //        float angle = Vector3.Angle(transform.forward, dirToPlayer);
-
-    //        if (angle < viewAngle / 2f)
-    //        {
-    //            float distance = Vector3.Distance(transform.position, hit.transform.position);
-
-    //            if (!Physics.Raycast(transform.position + Vector3.up * 1.5f, dirToPlayer, distance, obstacleMask))
-    //            {
-    //                Difficulty();
-    //                animations();
-    //                HandleFootsteps();
-    //                agent.SetDestination(hit.transform.position);
-    //                isMoving = true;
-    //                currentState = EnemyState.ChasePlayer;
-    //                return;
-    //            }
-    //        }
-    //    }
-
-    //    if (currentState == EnemyState.ChasePlayer)
-    //        currentState = EnemyState.Patrol;
-    //}
+    
     void PlayerDetection()
     {
         Collider[] hits = Physics.OverlapSphere(transform.position, viewDistance, playerMask);
@@ -285,7 +255,7 @@ public class EnemyController : MonoBehaviour
 
             if (stuckTimer > 3f)
             {
-                Debug.Log("ENEMY STUCK! New path...");
+                
 
                 agent.ResetPath();
 

@@ -25,7 +25,7 @@ public class MenuManager : MonoBehaviour
         PlayerPrefs.SetFloat("sensitivity", value);
         PlayerPrefs.Save();
 
-        Debug.Log("Mouse Sensitivity kaydedildi: " + value);
+       
     }
 
     public void PlayGame()
@@ -65,7 +65,7 @@ public class MenuManager : MonoBehaviour
         PlayerPrefs.SetInt("difficulty", (int)level);
         PlayerPrefs.Save();
 
-        Debug.Log("Zorluk kaydedildi: " + level);
+       
     }
 
 }

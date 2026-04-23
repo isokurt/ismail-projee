@@ -118,7 +118,7 @@ namespace EasyDoorSystem
             {
                 // Kapý kilitli
                 PlaySound(lockedSound);
-                Debug.Log("Kapý kilitli! Gerekli item yok veya yanlýþ item seçili.");
+                
             }
         }
 
